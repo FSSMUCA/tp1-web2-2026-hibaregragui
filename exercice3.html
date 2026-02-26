@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+    <header>
+      <img src="https://img.freepik.com/vecteurs-premium/banniere-ruban-bleu_1102-4107.jpg" width="100%">
+      <nav align="center">
+        <a href="#Accueil">Accueil</a> |
+        <a href="#Présentation">Présentation</a> |
+        <a href="#Activités">Activités</a> | 
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <font face="verdana" color="#003569">
+      <h1>Mon exercice du TP 1</h1>
+    </font>
+    <font face="verdana" color="#444444">
+      <p>Cet exercice permet de mettre en pratique les balises que nous avaons vu jusqu'ici.<br>Les possibilités de mise en évidence du design sont limités ! Il reste encore du chemin à faire avant de réussir une page Web avec un design <strong>agréable.</strong></p> 
+    </font>
+
+    <script>
+        const TAUX_TVA = 0.20;
+        let prixHT = 150;
+        let prixTTC = prixHT + (TAUX_TVA * prixHT);
+        let montantTVA = TAUX_TVA * prixHT;
+        
+        console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${montantTVA} € | Prix TTC : ${prixTTC} €`);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 4</h1>
+    <header>
+      <img src="https://img.freepik.com/vecteurs-premium/banniere-ruban-bleu_1102-4107.jpg" width="100%">
+      <nav align="center">
+        <a href="#Accueil">Accueil</a> |
+        <a href="#Présentation">Présentation</a> |
+        <a href="#Activités">Activités</a> | 
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <font face="verdana" color="#003569">
+      <h1>Mon exercice du TP 1</h1>
+    </font>
+    <font face="verdana" color="#444444">
+      <p>Cet exercice permet de mettre en pratique les balises que nous avaons vu jusqu'ici.<br>Les possibilités de mise en évidence du design sont limités ! Il reste encore du chemin à faire avant de réussir une page Web avec un design <strong>agréable.</strong></p> 
+    </font>
+
+    <script>
+      let prenom = prompt("Quel est votre prénom ?");
+      let age = prompt("Quel est votre âge ?");
+      let ageConverti = Number(age);
+      let anneeNaissance = 2025 - age;
+
+      alert(`Bonjour ${prenom}! Vous êtes né(e) vers ${anneeNaissance}`);
+      let afficher = confirm("Afficher dans la console ?");
+
+      if (afficher === true){
+        console.log("Prénom :", prenom); 
+        console.log("Age :", ageConverti);  
+        console.log("Année de naissance :", anneeNaissance);
+      }
+
+    </script>
+  </body>
+</html>
